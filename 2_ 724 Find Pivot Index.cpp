@@ -8,12 +8,23 @@ class Solution
     int pivotIndex(vector<int>& nums)
     {
         int l=0, r=0;
-        for(int& v: i<nums.size(); ++i)
+        for(int& v: nums)
         {
-            r-=nums[i];
-            
+            r += v;
         }
-
+        for(int i=0; i<nums.size(); ++i)
+        {
+            r -= nums[i];
+            if(l == r)
+            {
+                return i;
+            }
+            else
+            {
+                l += nums[i];
+            }
+            return -1;
+        }
     }
 };
 

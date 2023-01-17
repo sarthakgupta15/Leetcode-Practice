@@ -26,7 +26,7 @@ Time Complexity O(n+m)
 using namespace std;
 
 //Definition for singly linked list.
-/*
+
 class ListNode
 {
     public:
@@ -38,7 +38,7 @@ class ListNode
         next = NULL;
     }
 };
-*/
+
 class Solution
 {
     public:
